@@ -1,0 +1,160 @@
+/*
+Theme Name: Toad.com.br
+Theme URI: toad.com.br
+Author: Vitor Leonel
+Author URI: http://level99.com.br
+Description: Tema construido inteiramente por @vrleonel e com  design da Simone Version: 0.1*/
+
+/*RESET----------------------------------------------*/
+body, h1, h2, h3, h4, h5, h6, blockquote, p, address, form, fieldset, ul, ol, dl, dt, dd, li, hr, table, td, th { margin: 0; padding: 0; list-style: none; }
+fieldset, img { border: none; }
+hr { display: none; }
+body { font-weight: normal; font-size: 14px; color: #444; font-family: arial, Helvetica; background: #fff; }
+input, textarea { color: #999; }
+* html .clearfix { height: 1%; outline: none; }
+.clear { clear: both; height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; }
+
+ /* IE-Mac */
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.last { margin-right: 0!important; padding-right: 0!important; }
+
+/* TITLES---------------------------------------------- */
+h1, h2, h3, h4, h5 { font-weight: normal; }
+h3 { font-family: Arial, Helvetica; text-transform:uppercase; }
+h3 span { color: #41b19d; }
+
+/* LINK---------------------------------------------- */
+a { text-decoration: none; color: #555; outline: none; }
+a:hover { text-decoration: none; }
+a img { border: none; }
+
+/* COMMONS---------------------------------------------- */
+body{ background: #AAAAAA;}
+#container{	width: 1000px;	margin: 0 auto;	background: #FFF;	}
+#content{	width: 588px;	float:left;	border-right:2px solid #B0E0C2;	margin-left:62px;	margin-top: 40px;}
+#sidebar{	width: 286px;	float: right;	margin-right:22px;	margin-top: 40px;	margin-left:25px;	outline: 1px solid #FF000;}
+
+/* LIST---------------------------------------------- */
+ul.lst { font-size: 11px; margin: 20px 0 13px; min-height: 182px; }
+ul.lst li { margin: 7px 0; line-height: 14px; }
+ul.lst li a { color: #666666 !important; font-weight: normal !important; line-height: 21px}
+ul.lst li a:hover { color: #ff6633 !important; }
+ul.lst li span { color: #ff6633; margin-right: 3px; }
+.general-lst ul.lst { font-size: 16px; margin: 40px 0; }
+.general-lst ul.lst li { line-height: 21px; }
+.general-lst ul.lst li a { color: #666 !important; }
+.general-lst .related { margin-top: 40px; }
+
+/*------------------------------ * Geral *---------------------------- */
+.align-left{ float: left;}
+.align-right{ float:right; }
+#searchform{	margin-top:35px;	margin-right:35px;}
+#searchform input#s{ 	background: #61C286; 	height: 24px; 	width:120px; 	border-top: 1px solid #89D1A4;	border-left: 1px solid #D7F0E1;	border-bottom: 1px solid #B0E0C2;	border-right:none;	float:left;		color:#FFF;	}
+#searchform  input#searchsubmit { 	background: transparent url(./images/lupa.gif) center center no-repeat;  	height:28px; 	width:28px;	border:none;	cursor:pointer;	border-top: 1px solid #89D1A4;	border-bottom: 1px solid #B0E0C2;	}
+
+/* HEADER * ----------------------------------*/
+#header .text{ width: 300px; font-size:22px; padding-top:25px;}
+#nav{height:47px;}
+#nav ul li{ display:inline-block; margin:0; padding:0; border:0; float:left; }
+#nav ul li a {
+  height: 30px;		
+  display:block; 	
+  background: #EBEBEB;	
+  border-top: 1px solid #F5F5F5;	
+  border-bottom:1px solid #A6D6B8;	
+  border-right: 1px solid #E6E6E6;	
+  border-left:0;	
+  margin:0px;	
+  padding:15px 20px 0 20px;}
+
+.current-post-ancestor a, .current-menu-parent a, .current-post-parent a, .current-menu-item a, .current_page_item a{
+  background: #A6D6B8 !important;
+}
+#nav ul li a:hover{background: #E6E6E6 !important;}  
+
+
+/* SLIDE * ----------------------------------*/
+#slide-news{	height:300px;	background: #333;}
+
+/* calendar widget */
+.widget_calendar {float: left;}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { text-align: right; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-bottom: 10px; }
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:8px;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+
+/* CONTENT* ----------------------------------*/
+#content h3 { font-size:30px; margin-bottom: 10px;}
+.post-list{border-bottom:1px solid #B0E0C2; padding:22px 0;}
+.post-list h2 {font-size:30px; line-height: 90%; margin-bottom: 10px;}
+.post-category{	text-transform:uppercase;	color: #9B9A9A;	font-size:14px;}
+.post-thumb{	width: 333px;	float:left;	background: url(./images/thumb-arrow.png) no-repeat center right;	}
+
+.post-list datetime{font-size: 12px; color: #9B9A9A; margin:8px 0;}
+
+/* =Navigation
+-------------------------------------------------------------- */
+
+.nav-previous {
+	float: left;
+	width: 50%;
+	margin-top:10px;
+}
+
+.nav-next {
+	float: right;
+	text-align: right;
+	width: 50%;
+	margin-top:10px;
+}
+
+#nav-below div a, #nav-single span a{
+  padding: 10px 10px;  
+  background: #61C286;
+  color:#FFF;
+}
+
+#nav-below div a:hover, #nav-single span a:hover{
+  padding: 9px 9px;
+  
+}
+
+/* SINGLE *---------------------------------------------*/
+
+.comment-square{
+  float:right;
+  margin-right:10px;
+}
+.comment-square a{
+    display:block; 
+    padding:10px 5px; 
+    width: 30px; 
+    text-align:center; 
+    background: #61C286;
+    color: #FFF;
+  }
+.comment-square a:hover{
+  color: #000;
+  font-weight:bold;
+}
+
+datetime{ line-height:25px; font-size:14px;} 
+
+
+/* SIDEBAR * ----------------------------------*/
+
+.side-block h3, h2.widgettitle{ font-size:22px;  text-align:left; text-transform:uppercase; margin: 20px 0; }
+#sidebar li.widget{}
+.redes li{ display:inline-block; margin:0 0 0 10px;}
+
+/* Footer---------------------------------------------- */
+#footer{height: 176px; margin-top:90px; padding-top:50px; background: #EBEBEB; text-align:center;}
+
