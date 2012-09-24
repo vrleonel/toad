@@ -59,28 +59,32 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
 
 /* HEADER * ----------------------------------*/
 #header .text{ width: 300px; font-size:22px; padding-top:25px;}
-#nav{height:47px;}
+#nav{height:50px;}
 #nav ul li{ display:inline-block; margin:0; padding:0; border:0; float:left; }
-#nav ul li:first-child a{
-  background: url(images/thumb-arrow.png) left center no-repeat;
-  padding-left: 20px}
+
 #nav ul li a {
-  height: 30px;		
+  height: 35px;		
   display:block; 	
   background: #EBEBEB;
-  border-top: 1px solid #F5F5F5;
-  border-bottom:1px solid #A6D6B8;
+  /*border-top: 1px solid #F5F5F5;*/
+  /*border-bottom:1px solid #A6D6B8;*/
   border-right: 1px solid #E6E6E6;
   border-left:0;
   margin:0px;
   padding:15px 20px 0 20px;}
 
-#nav ul li:nth-child(even) a{background: #E6E6E6;}  
-#nav ul li a:hover{background-color: #A6D6B8;}  
+#nav ul li:first-child a{
+  background-image: url(images/nav-arrow.png);
+  background-position: 0px -1px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+}
+#nav ul li:nth-child(even) a{background: #D9D9D9;}  
+#nav ul li a:hover{background-color: #61C286;}  
 
 
 .current-post-ancestor a, .current-menu-parent a, .current-post-parent a, .current-menu-item a, .current_page_item a{
-  background-color: #A6D6B8 !important;
+  background-color: #61C286 !important;
 }
 
 /* SLIDE * ----------------------------------*/
