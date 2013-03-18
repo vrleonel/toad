@@ -58,7 +58,7 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
 #searchform  input#searchsubmit { 	background: transparent url(./images/lupa.gif) center center no-repeat;  	height:28px; 	width:28px;	border:none;	cursor:pointer;	border-top: 1px solid #89D1A4;	border-bottom: 1px solid #B0E0C2;	}
 
 /* HEADER * ----------------------------------*/
-#header .text{ width: 300px; font-size:22px; padding-top:25px;}
+#header .text{ width: 300px; font-size:20px; padding-top:25px; padding-left: 20px}
 #nav{height:49px;}
 #nav ul li{ display:inline-block; margin:0; padding:0; border:0; float:left; }
 
@@ -71,7 +71,7 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
   border-right: 1px solid #E6E6E6;
   border-left:0;
   margin:0px;
-  padding:17px 20px 0 20px;
+  padding:17px 35px 0 35px;
   text-transform: uppercase;
 }
 
@@ -79,10 +79,11 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
   background-image: url(images/nav-arrow.png);
   background-position: 0px -1px;
   background-repeat: no-repeat;
-  padding-left: 40px;
+  padding-left: 48px;
+  padding-right: 30px;
 }
 #nav ul li:nth-child(even) a{background: #D9D9D9;}  
-#nav ul li a:hover{background-color: #61C286;}  
+#nav ul li a:hover{background-color: #61C286; color:#FFF;}  
 
 
 .current-post-ancestor a, .current-menu-parent a, .current-post-parent a, .current-menu-item a, .current_page_item a{
@@ -110,7 +111,8 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
 #content h3 { font-size:30px; margin-bottom: 10px;}
 .post-list{border-bottom:1px solid #B0E0C2; padding:22px 0;}
 .post-list h2 {font-size:30px; line-height: 90%; margin-bottom: 10px;}
-.post-category{	text-transform:uppercase;	color: #9B9A9A;	font-size:14px;}
+.post-category{	text-transform:lowercase;	color: #61C286;	font-size:13px;}
+.post-category a{color: #61C286;}
 .post-thumb{	width: 333px;	float:left;	background: url(./images/thumb-arrow.png) no-repeat center right;	}
 
 .post-list datetime{font-size: 12px; color: #9B9A9A; margin:8px 0;}
@@ -162,6 +164,16 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
 }
 
 datetime{ line-height:25px; font-size:14px;} 
+.fb-comment-title{border-top: 1px solid #B0E0C2; margin-top: 20px; padding-top: 20px}
+.border-row{ display: block; background: url(images/pixel-verde.gif) repeat-x center center; height: 1px;}
+
+.entry p{
+  margin: 10px 0;
+}
+
+.entry img{
+  max-width: 100%;
+}
 
 
 /* SIDEBAR * ----------------------------------*/

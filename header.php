@@ -18,6 +18,7 @@
   <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
   <?php wp_enqueue_script('jquery'); ?>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.js"></script>
   <?php wp_head(); ?>
 </head>
 
@@ -27,7 +28,7 @@
       <div	id="header" class="clearfix">
         <h1 class="align-left">
           <a href="/" alt="Home - toad.com.br" title="Home - toad.com.br">
-            <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" width="486" height="190" alt="toad.com.br"/>
+            <img src="<?php bloginfo('template_directory'); ?>/images/logo.png" width="350" alt="toad.com.br"/>
           </a>
         </h1>
 

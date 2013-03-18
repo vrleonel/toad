@@ -10,5 +10,9 @@ Installation
 
 Usage
 -----
-
   todo
+
+Plugins
+-----
+KenBurns Sliders
+

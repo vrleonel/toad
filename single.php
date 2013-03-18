@@ -3,7 +3,8 @@
 <div class="clearfix" > 			
   <div id="slide-news">
     <? // include("slideshow.php"); ?>
-    <?include (ABSPATH . '/wp-content/plugins/coin-slider-4-wp/coinslider.php'); ?>
+    <?#include (ABSPATH . '/wp-content/plugins/coin-slider-4-wp/coinslider.php'); ?>
+    <?php putKBSlider( "home"); ?>
   </div>	
 </div>	
 
@@ -22,7 +23,7 @@
         <div class="comment-square"><?php comments_popup_link('0', '1', '%'); ?></div>					
         
         <!-- Display a comma separated list of the Post's Categories. -->
-        <h3 class="postmetadata post-category"><?php the_category(', '); ?></h3>
+        <h3 class="postmetadata post-category">>> _<?php the_category(', _'); ?></h3>
         
         <!-- Display the Title as a link to the Post's permalink. -->
         <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
@@ -33,12 +34,13 @@
         <!-- Display the Post's Content in a div box. -->
         <div class="entry">
           <?php the_content(); ?>
+          <div class="border-row"></div>
         </div>
 
       </div> <!-- closes the first div box -->
-      <div class="navigation"><p><?php posts_nav_link(); ?></p></div>
+      
       <!-- Stop The Loop (but note the "else:" - see next line). -->
-    <?php endwhile; else: ?>
+      <?php endwhile; else: ?>
 
       <!-- The very first "if" tested to see if there were any Posts to -->
       <!-- display.  This "else" part tells what do if there weren't any. -->
@@ -46,14 +48,19 @@
 
       <!-- REALLY stop The Loop. -->
     <?php endif; ?>
-
+    <div class="navigation"><p><?php posts_nav_link(); ?></p></div>
 
     <nav id="nav-single">
       <span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Anterior', 'twentyeleven' ) ); ?></span>
       <span class="nav-next"><?php next_post_link( '%link', __( 'Pr&oacute;ximo <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
     </nav><!-- #nav-single -->
+  <?php //comment_form(); ?>
+  <!-- COmments -->
+  <?php #comments_template(); ?> 
+  <?php #echo do_shortcode('[fbcomments]'); ?>
+  <!-- /comment -->
+  </div>
 
-  </div>				
   <!-- sidebar -->
   <? get_sidebar(); ?>
   <!-- /sidebar -->

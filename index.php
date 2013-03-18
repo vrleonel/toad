@@ -3,7 +3,8 @@
 <div class="clearfix" > 			
   <div id="slide-news">
     <? // include("slideshow.php"); ?>
-    <?include (ABSPATH . '/wp-content/plugins/coin-slider-4-wp/coinslider.php'); ?>
+    <? #include (ABSPATH . '/wp-content/plugins/coin-slider-4-wp/coinslider.php'); ?>
+    <?php putKBSlider( "home"); ?>
   </div>	
 </div>	
 <!-- content -->
@@ -26,7 +27,7 @@
         </div>
         <!-- /Thumb -->
         <!-- Display a comma separated list of the Post's Categories. -->
-        <h3 class="postmetadata post-category"><?php the_category(', '); ?></h3>	
+        <h3 class="postmetadata post-category">>> _<?php the_category(', _'); ?></h3>	
         <!-- Display the Title as a link to the Post's permalink. -->
         <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>	
         <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
