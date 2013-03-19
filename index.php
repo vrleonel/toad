@@ -14,7 +14,7 @@
     <!-- Start the Loop. -->
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <div id="post-<?php the_ID(); ?>" <?php post_class('clearfix post-list'); ?>>
+      <div id="post-<?php the_ID(); ?>" <?php post_class('clearfix post-list home-posts'); ?>>
         <!-- Thumb -->	
         <div class="post-thumb clearfix">	
           <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -26,16 +26,18 @@
           </a>
         </div>
         <!-- /Thumb -->
-        <!-- Display a comma separated list of the Post's Categories. -->
-        <h3 class="postmetadata post-category">>> _<?php the_category(', _'); ?></h3>	
-        <!-- Display the Title as a link to the Post's permalink. -->
-        <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>	
-        <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
+        <div class="excerpt">
+          <!-- Display a comma separated list of the Post's Categories. -->
+          <h3 class="postmetadata post-category">>> _<?php the_category(', _'); ?></h3>	
+          <!-- Display the Title as a link to the Post's permalink. -->
+          <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>	
+          <!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
 
-        <datetime><?php the_time('d'); echo " de "; the_time('F Y'); ?></datetime>
+          <datetime><?php the_time('d'); echo " de "; the_time('F Y'); ?></datetime>
 
-        <div class="entry">
-          <?php the_excerpt(); ?>
+          <div class="entry home-entry">
+            <?php the_excerpt(); ?>
+          </div>
         </div>
       </div>
       <div class="navigation">

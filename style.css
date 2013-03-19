@@ -25,7 +25,7 @@ input, textarea { color: #999; }
 
 /* TITLES---------------------------------------------- */
 h1, h2, h3, h4, h5 { font-weight: normal; }
-h3 { font-family: Arial, Helvetica; text-transform:uppercase; }
+h3 { font-family: Arial, Helvetica;  }
 h3 span { color: #41b19d; }
 
 /* LINK---------------------------------------------- */
@@ -36,7 +36,7 @@ a img { border: none; }
 /* COMMONS---------------------------------------------- */
 body{ background: #AAAAAA;}
 #container{	width: 1000px;	margin: 0 auto;	background: #FFF;	}
-#content{	width: 588px;	float:left;	border-right:2px solid #B0E0C2;	margin-left:62px;	margin-top: 40px;}
+#content{	width: 588px;	float:left;	border-right:2px solid #B0E0C2;	margin-left:42px;	margin-top: 40px;}
 #sidebar{	width: 286px;	float: right;	margin-right:22px;	margin-top: 40px;	margin-left:25px;	outline: 1px solid #FF000;}
 
 /* LIST---------------------------------------------- */
@@ -57,6 +57,7 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
 #searchform input#s{ 	background: #61C286; 	height: 24px; 	width:120px; 	border-top: 1px solid #89D1A4;	border-left: 1px solid #D7F0E1;	border-bottom: 1px solid #B0E0C2;	border-right:none;	float:left;		color:#FFF;	}
 #searchform  input#searchsubmit { 	background: transparent url(./images/lupa.gif) center center no-repeat;  	height:28px; 	width:28px;	border:none;	cursor:pointer;	border-top: 1px solid #89D1A4;	border-bottom: 1px solid #B0E0C2;	}
 
+
 /* HEADER * ----------------------------------*/
 #header .text{ width: 300px; font-size:20px; padding-top:25px; padding-left: 20px}
 #nav{height:49px;}
@@ -71,7 +72,7 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
   border-right: 1px solid #E6E6E6;
   border-left:0;
   margin:0px;
-  padding:17px 35px 0 35px;
+  padding:17px 20px 0 20px;
   text-transform: uppercase;
 }
 
@@ -80,7 +81,7 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
   background-position: 0px -1px;
   background-repeat: no-repeat;
   padding-left: 48px;
-  padding-right: 30px;
+  padding-right: 20px;
 }
 #nav ul li:nth-child(even) a{background: #D9D9D9;}  
 #nav ul li a:hover{background-color: #61C286; color:#FFF;}  
@@ -108,14 +109,26 @@ ul.lst li span { color: #ff6633; margin-right: 3px; }
 #wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
 
 /* CONTENT* ----------------------------------*/
-#content h3 { font-size:30px; margin-bottom: 10px;}
+#content h3 { font-size:16px; margin-bottom: 10px;}
 .post-list{border-bottom:1px solid #B0E0C2; padding:22px 0;}
-.post-list h2 {font-size:30px; line-height: 90%; margin-bottom: 10px;}
+.post-list h2 {font-size:20px; color: #555555; line-height: 90%; margin-bottom: 10px;}
 .post-category{	text-transform:lowercase;	color: #61C286;	font-size:13px;}
 .post-category a{color: #61C286;}
 .post-thumb{	width: 333px;	float:left;	background: url(./images/thumb-arrow.png) no-repeat center right;	}
 
 .post-list datetime{font-size: 12px; color: #9B9A9A; margin:8px 0;}
+
+
+/* =============================================
+  Index
+================================================*/
+
+.excerpt{
+  width: 240px;
+  float: right;
+  padding: 0 5px;
+}
+
 
 /* =Navigation
 -------------------------------------------------------------- */
@@ -167,21 +180,120 @@ datetime{ line-height:25px; font-size:14px;}
 .fb-comment-title{border-top: 1px solid #B0E0C2; margin-top: 20px; padding-top: 20px}
 .border-row{ display: block; background: url(images/pixel-verde.gif) repeat-x center center; height: 1px;}
 
+/*.hentry h2, .hentry .entry, .hentry h3 {
+  line-height: 1.125em;
+  padding-right: 5px;
+  padding-left: 338px;
+}
+.hentry datetime {
+  padding-left: 5px;
+}*/
 .entry p{
   margin: 10px 0;
+  font-size:14px;
+  line-height: 1.315em;
+
 }
 
 .entry img{
-  max-width: 100%;
+  max-width: 90%;
 }
 
 
 /* SIDEBAR * ----------------------------------*/
 
-.side-block h3, h2.widgettitle{ font-size:22px;  text-align:left; text-transform:uppercase; margin: 20px 0; }
+.side-block h3, h2.widgettitle{ font-size:22px;  text-align:left; text-transform:lowercase; color:#13B162; margin: 20px 0; }
 #sidebar li.widget{}
+.widget_recent_entries li{ background: #D9D9D9; fon-size: 12px; padding: 10px 5px;}
+.widget_recent_entries li:nth-child(even) { background: #EBEBEB;}
 .redes li{ display:inline-block; margin:0 0 0 10px;}
 
 /* Footer---------------------------------------------- */
 #footer{height: 176px; margin-top:90px; padding-top:50px; background: #EBEBEB; text-align:center;}
 
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.single-entry a{
+  color: #14AD2C
+} 
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}

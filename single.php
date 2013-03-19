@@ -1,13 +1,5 @@
 <? get_header() ?>
 <!-- /header -->
-<div class="clearfix" > 			
-  <div id="slide-news">
-    <? // include("slideshow.php"); ?>
-    <?#include (ABSPATH . '/wp-content/plugins/coin-slider-4-wp/coinslider.php'); ?>
-    <?php putKBSlider( "home"); ?>
-  </div>	
-</div>	
-
 <!-- content -->
 <div class="clearfix" > 	
   <div id="content" >
@@ -19,7 +11,7 @@
       <!-- If it is, the div box is given the CSS class "post-cat-three". -->
       <!-- Otherwise, the div box will be given the CSS class "post". -->
 
-      <div id="post-<?php the_ID(); ?>" <?php post_class('clearfix post-list'); ?>>
+      <div id="post-<?php the_ID(); ?>" <?php post_class('clearfix post-list single-post'); ?>>
         <div class="comment-square"><?php comments_popup_link('0', '1', '%'); ?></div>					
         
         <!-- Display a comma separated list of the Post's Categories. -->
@@ -32,7 +24,7 @@
         <datetime><?php the_time('d'); echo " de "; the_time('F Y') ?></datetime>
 
         <!-- Display the Post's Content in a div box. -->
-        <div class="entry">
+        <div class="entry single-entry">
           <?php the_content(); ?>
           <div class="border-row"></div>
         </div>
@@ -44,7 +36,7 @@
 
       <!-- The very first "if" tested to see if there were any Posts to -->
       <!-- display.  This "else" part tells what do if there weren't any. -->
-      <p>Desculpe mas o que você procura não está aqui!.</p>
+      <p>Desculpe mas o que vocï¿½ procura nï¿½o estï¿½ aqui!.</p>
 
       <!-- REALLY stop The Loop. -->
     <?php endif; ?>
